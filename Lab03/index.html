@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 03 - Form</title>
+  </head>
+  <body>
+    <h2>LAB03 FORM</h2>
+    <form action="./processor.php" method="post">
+      <input type="text" name="username" id="username" />
+      <label for="username">Username</label><br />
+
+      <input type="password" name="password" id="password" />
+      <label for="password">Password</label><br />
+
+      <input type="text" name="studentNumber" id="studentNumber" />
+      <label for="sutdentNumber">Student Number</label><br />
+
+      <fieldset>
+        <legend for="gender">Choose your gender</legend>
+
+        <input
+          type="radio"
+          name="gender[]"
+          id="Female"
+          value="Female"
+        />
+        <label for="Female">Female</label><br />
+        
+        <input 
+          type="radio" 
+          name="gender[]" 
+          id="male" 
+          value="male" />
+        <label for="male">Male</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <label for="language">Choose which computer language you are studying (if any)</label>
+        </legend>
+        <input
+          type="checkbox"
+          name="language[]"
+          id="Cdoubleplus"
+          value="Cdoubleplus"
+        />
+        <label for="Cdoubleplus">C++</label><br />
+        
+        <input
+          type="checkbox"
+          name="language[]"
+          id="CSharp"
+          value="CSharp"
+        />
+        <label for="CSharp">C#</label><br />
+
+        <input
+          type="checkbox"
+          name="language[]"
+          id="javaScript"
+          value="javaScript"
+        />
+        <label for="javaScript">Javascript</label><br />
+
+        <input
+        type="checkbox"
+        name="language[]"
+        id="java"
+        value="java"
+      />
+      <label for="java">Java</label><br />
+
+      <input
+        type="checkbox"
+        name="language[]"
+        id="perl"
+        value="perl"
+      />
+      <label for="perl">Perl</label><br />
+
+      <input
+        type="checkbox"
+        name="language[]"
+        id="PHP"
+        value="PHP"
+      />
+      <label for="PHP">PHP</label><br />
+
+      <input
+        type="checkbox"
+        name="language[]"
+        id="python"
+        value="python"
+      />
+      <label for="python">Python</label><br />
+
+      </fieldset>
+      <br>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
